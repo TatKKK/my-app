@@ -1,0 +1,5 @@
+<div class="sub-container">
+    <app-todo-form (newTodo)="addTodo($event)"></app-todo-form>
+    <app-todo-table [todos]="todos"></app-todo-table>
+    <app-todo-summary [todos]="todos"></app-todo-summary>
+</div>

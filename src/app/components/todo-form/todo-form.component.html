@@ -1,0 +1,7 @@
+<h2>TODO APP</h2>
+<form class="todo-form" (ngSubmit)="addTodo()">
+ 
+    <input type="text" placeholder="Type here..." class="text-field" [(ngModel)]="newTodoTitle" name="todo" required>
+
+    <button type="submit" class="btn-submit">Add Todo</button>
+</form>

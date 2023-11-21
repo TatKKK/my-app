@@ -1,0 +1,25 @@
+<ul class="list">
+    <li class="list-item" *ngFor="let todo of todos">
+        {{ todo.title }} - {{ todo.completed ? 'Completed' : 'Pending' }}
+    </li>
+</ul>
+
+<table class="todo-table">
+    <thead>
+        <tr>
+            <th class="table-cell">Title</th>
+            <th class="table-cell text-center">Completed</th>
+            <th class="table-cell">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let todo of todos">
+            <td class="table-cell">{{todo.title}}</td>
+            <td class="table-cell text-center"> <input type="checkbox" [checked]="todo.completed" (click)="toggleTodo(todo.id)"></td>
+            <td lass="table-cell">
+                <a href="#" (click)="deleteTodo(todo.id); $event.preventDefault()" class="text-center">Delete</a> 
+            </td>
+        </tr>
+    </tbody>
+
+</table>

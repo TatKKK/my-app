@@ -1,0 +1,27 @@
+.todo-form {
+    display:flex;
+    gap:20px;
+   
+}
+
+.todo-form .text-field {
+	width: 100%;
+	padding: 16px;
+	border: 1px solid #ccc;
+}
+
+.todo-form .text-field:focus {
+	outline: none;
+	border-color: rgb(40, 44, 52);
+}
+
+.btn-submit{
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border:none;
+}
+.btn-submit:hover{
+    background-color:#0000ff80;
+}
